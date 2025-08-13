@@ -18,7 +18,7 @@ test.describe("User seraches trip", () => {
     await dashboardPage.loginButton.click();
     await loginPage.login(loginEmail, loginPassword);
   });
-  test.only("successfully trip search", async ({ page }) => {
+  test("successfully trip search @tripSearch", async ({ page }) => {
     // Arrange
     const destination = String(process.env.DESTINATION);
     const warningMessage = String(process.env.WARNING_MESSAGE);

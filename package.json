@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:headed": "npx playwright test --headed",
+    "test:login:headed": "npm run test:headed tests/login.spec.ts",
+    "test:smoke": "npx playwright test --grep \"@smoke\" --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

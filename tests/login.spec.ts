@@ -15,7 +15,7 @@ test.describe("User log in to traval planet", () => {
     await dashboardPage.optionAllowAll.click();
   });
 
-  test("successfull log in with correct credentials", async ({ page }) => {
+  test("successfull log in with correct credentials @smoke @login", async ({ page }) => {
     // Arrange
     const loginEmail = loginData.loginEmail;
     const loginPassword = loginData.loginPassword;
